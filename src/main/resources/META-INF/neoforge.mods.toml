@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "millstonekinetic"
+version = "1.0.0"
+displayName = "Millstone Kinetic"
+description = '''O Millstone do Modest Mining deixa de funcionar com redstone e passa a exigir força cinética do Create vinda diretamente de cima (ex.: hand crank, shaft ou cogwheel girando no bloco acima).'''
+
+[[mixins]]
+config = "millstonekinetic.mixins.json"
+
+[[dependencies.millstonekinetic]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.219,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.millstonekinetic]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.21.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.millstonekinetic]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.millstonekinetic]]
+modId = "modestmining"
+type = "required"
+versionRange = "[1.5.0,)"
+ordering = "AFTER"
+side = "BOTH"
